@@ -44,7 +44,7 @@ const TypeBrand = sequelize.define("type_brand", {
 User.hasMany(Rating);
 Rating.belongsTo(User);
 
-Product.hasMany(ProductInfo);
+Product.hasMany(ProductInfo, {as: "info"});
 ProductInfo.belongsTo(Product);
 
 Product.hasMany(Rating);

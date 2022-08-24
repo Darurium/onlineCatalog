@@ -13,7 +13,7 @@ class ApiError extends Error {
         return new ApiError(500, message);
     };
 
-    static forbiden(message) {
+    static forbidden(message) {
         return new ApiError(403, message);
     };
 };
